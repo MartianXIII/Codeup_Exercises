@@ -1,23 +1,30 @@
 <?php
-
-function add($a, $b)
-{
-    echo $a + $b;
+//Mars Martian
+function add($a, $b) {
+    return ($a + $b) . "\n";
 }
 
-function subtract($a, $b)
-{  
-    // Add code here
+function subtract($a, $b) {
+    return ($a - $b) . "\n";
 }
 
-function multiply($a, $b)
-{
-    // Add code here
+function multiply($a, $b) {
+    return ($a * $b) . "\n";
 }
 
-function divide($a, $b)
-{
-    // Add code here
+function divide($a, $b) {
+    return ($a / $b) . "\n";
 }
 
-// Add code to test your functions here
+function modulus($a, $b) {
+    return ($a % $b) . "\n";
+}
+
+$c = 10;
+$d = 2;
+
+echo add($c, $d);
+echo subtract($c, $d);
+echo multiply($c, $d);
+echo divide($c, $d);
+echo modulus($c, $d);
