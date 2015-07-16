@@ -15,7 +15,7 @@
  } else {
      echo "$b is less than or equal to $c\n" . PHP_EOL;
  }
-
+//order matters with if else's
  if ($b == $c) {
      echo "$b is equal to $c\n" . PHP_EOL;
  } elseif ($b === $c) {
