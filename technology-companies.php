@@ -44,5 +44,14 @@ $companies = [
     ]
 ];
 
-ksort($companies);
-print_r($companies);
+//ksort($companies);
+//print_r($companies);
+//function staff() {
+
+    arsort($companies);
+    //print_r($companies);
+  foreach($companies as $key => $staff) {
+    echo $key . PHP_EOL;
+    asort($staff);
+    print_r($staff);
+  }
