@@ -1,31 +1,31 @@
 <?php
-function inspect($value) {
-	$type = gettype($value);
-	switch ($type) {
-		case ("NULL"):
-			return 'The value is Null.' . PHP_EOL;
-		case ("array"):
-			if (empty($value)) {
-				return 'This is an empty array.' . PHP_EOL;
-			} else {
-				return 'This is an array.' . PHP_EOL;
-			}
-		case ("boolean"):
-			if ($value) {
-				return "This $type is true." . PHP_EOL;
-			} else {
-				return "This $type is false." . PHP_EOL;
-			}
-		case ("string"):
-			if (empty($value)) {
-				return "The string is empty" . PHP_EOL;
-			} else {
-				return "The $type is $value" . PHP_EOL;
-			}
-		default:
-			return "The $type is $value" . PHP_EOL;
-	}
-}
+  function inspect($value) {
+  	$statement = gettype($value);
+  	switch ($statement) {
+  		case ("NULL"):
+  			return 'The value is Null.' . PHP_EOL;
+  		case ("array"):
+  			if (empty($value)) {
+  				return 'This is an empty array.' . PHP_EOL;
+  			} else {
+  				return 'This is an array.' . PHP_EOL;
+  			}
+  		case ("boolean"):
+  			if ($value) {
+  				return "This $statement is true." . PHP_EOL;
+  			} else {
+  				return "This $statement is false." . PHP_EOL;
+  			}
+  		case ("string"):
+  			if (empty($value)) {
+  				return "The string is empty" . PHP_EOL;
+  			} else {
+  				return "The $statement is $value" . PHP_EOL;
+  			}
+  		default:
+  			return "The $statement is $value" . PHP_EOL;
+  	}
+  }
 
 $string1 = "I'm a little teapot";
 $string2 = '';
