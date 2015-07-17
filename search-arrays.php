@@ -13,7 +13,7 @@ function compare($array1, $array2) {
 	$count = 0;
 	foreach ($array1 as $key => $value) {
 		if(is_numeric(array_search($value, $array2))) {
-		$count ++;
+		$count++;
 		}
 	}
 		return $count;
@@ -29,5 +29,6 @@ if ($result) {
 
 var_dump(isInArray($names, 'Tina'));
 var_dump(isInArray($names, 'Bob'));
-echo compare($names, $compare) . PHP_EOL;
+var_dump(compare($names, $compare)) . PHP_EOL;
+echo (compare($names, $compare)) . PHP_EOL;
 //var_dump($array1 . $array2);
