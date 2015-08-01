@@ -12,6 +12,18 @@
       <input type="text" name="name">
       <input type="submit" name="submit" value="Search">
     </form>
-    <<?php // HACK:  ?>
+    <<?php
+    //HACK:
+    if(isset($_POST['submit'])){//dis Supper Global Array POST
+    if(isset($_GET['go'])){
+    if(preg_match("^/[A-Za-z]+/", $_POST['name'])){
+      $name=$_POST['name'];
+    }
+
+    } else {
+      echo "<p>Please insert a search query</p>";
+    }
+    }
+    ?>
   </body>
 </html>
