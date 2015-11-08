@@ -13,6 +13,7 @@ function searchThis($query, $array){
 }
 var_dump(searchThis('Tina', $names)) . PHP_EOL;
 var_dump(searchThis('Bob', $names)) . PHP_EOL;
+
 // Create a function to compare 2 arrays that returns the number of values
 // in common between the arrays. Use the 2 example arrays and
 // make sure your solution uses array_search().
