@@ -22,6 +22,7 @@
 // }
 // var_dump(parseContacts('contacts.txt'));
 
+
 function parseContacts($filename) {
     // read file
     $handle = fopen($filename, 'r');
